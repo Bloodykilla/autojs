@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.4">
+  <link rel="stylesheet" href="style.css">
+  <title>Спидометр</title>
+</head>
+<body onload="OnloadAnimaition()">
+  <audio id="myAudio">
+    <source src="car.mp3" type="audio/mpeg"
+    muted="muted">
+  </audio>
+  <div class="container">
+    <div id="odometr">MILES:<b counter="0">0</b></div>
+    <div id="tahometr">
+      <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    <div class="ris1-w"></div>
+    
+    <div class="ris1 ris1-o1"></div>
+    <div class="ris1 ris1-o2"></div>
+    <div class="ris1 ris1-o3"></div>
+    <div class="ris1 ris1-o4"></div>
+    <div class="ris1 ris1-o5"></div>
+    <div class="ris1 ris1-o6"></div>
+    <div class="ris1 ris1-o7"></div>
+    <div class="ris1 ris1-o8"></div>
+    <div class="ris1 ris1-o9"></div>
+    <div class="ris1 ris1-o10"></div>
+
+    <span class="s1-0">0</span>
+    <span class="s1-20">10</span>
+    <span class="s1-40">20</span>
+    <span class="s1-60">30</span>
+    <span class="s1-80">40</span>
+    <span class="s1-100">50</span>
+    <span class="s1-120">60</span>
+    <span class="s1-140">70</span>
+    <span class="s1-160">80</span>
+    <span class="s1-180">90</span>
+    <span class="s1-200">100</span>
+    <div id="strelka1"></div>
+  </div>
+    <div class="speedometr">
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      <div class="ris-w"></div>
+      
+      <div class="ris ris-o1"></div>
+      <div class="ris ris-o2"></div>
+      <div class="ris ris-o3"></div>
+      <div class="ris ris-o4"></div>
+      <div class="ris ris-o5"></div>
+      <div class="ris ris-o6"></div>
+      <div class="ris ris-o7"></div>
+      <div class="ris ris-o8"></div>
+      <div class="ris ris-o9"></div>
+      <div class="ris ris-o10"></div>
+
+      <span class="s-0">0</span>
+      <span class="s-20">20</span>
+      <span class="s-40">40</span>
+      <span class="s-60">60</span>
+      <span class="s-80">80</span>
+      <span class="s-100">100</span>
+      <span class="s-120">120</span>
+      <span class="s-140">140</span>
+      <span class="s-160">160</span>
+      <span class="s-180">180</span>
+      <span class="s-200">200</span>
+      <div id="strelka"></div>
+    </div>
+    <div class = "black"> 
+      <div id = "dashboard">
+      <img class="myImg1" src = "1234.gif"  width="70px" height="55px">
+      <img class="myImg2" src = "oil.gif"  width="70px" height="55px">
+      <img class="myImg3" src = "error.gif" width="70px" height="55px">
+      <img class="myImg4" src = "check.gif"  width="70px" height="55px">
+      <img class="myImg5" src = "error3.gif"   width="70px" height="55px">
+      <img class="myImg6" src = "error2.gif"   width="70px" height="55px">
+      <img class="myImg7" src = "belt.gif" width="70px" height="55px">
+      <img class="myImg8" src = "wheel.gif"  width="70px" height="55px">
+      </div>
+    <div class="text-box">
+      <p id="text"></p>
+    </div>
+    <button onclick="RideAnimation()" value = "START" class = "btn btn1">Start</button>
+    <button onclick="Random(x)" value = "GENERATE" class = "btn btn2">Generate</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+</html>
